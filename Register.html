@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visa Processing System - Registration</title>
+  <link rel="stylesheet" type="text/css" href="Register.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">APPLICANT LOGIN/REGISTER</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">APPLY VISA</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form action="process_registration.php" method="post">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" required>
+
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm_password">Confirm Password:</label>
+      <input type="password" id="confirm_password" name="confirm_password" required>
+
+      <input type="submit" value="Register">
+      <div class="login-link">
+        Already have an account? <a href="login.html">Log in here</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

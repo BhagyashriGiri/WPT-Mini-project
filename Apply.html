@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visa Processing System - Apply for Visa</title>
+  <link rel="stylesheet" type="text/css" href="Apply.css">
+  <script src="Style.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Apply for Visa</h2>
+    <form action="#" method="post" onsubmit="return validateForm()">
+      <div>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <span id="first_name_error" class="error"></span>
+      </div>
+      <div>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <span id="last_name_error" class="error"></span>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="email_error" class="error"></span>
+      </div>
+      <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">Select Country</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">UK</option>
+          <option value="Australia">Australia</option>
+        </select>
+        <span id="country_error" class="error"></span>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Submit</button>
+      <div id="success_message" class="success"></div>
+    </form>
+  </div>
+</body>
+</html>
